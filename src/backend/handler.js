@@ -1,11 +1,11 @@
 const express = require('express');
+const cors = require('cors')
 const serverless = require('serverless-http');
 const insert = require('./insert')
 
-const { SIGNUPS_TABLE } = process.env;
-
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 app.post('/signup', async (req, res) => {
   try {

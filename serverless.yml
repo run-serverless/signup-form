@@ -27,6 +27,8 @@ provider:
           Resource: 'arn:aws:dynamodb:${aws:region}:${aws:accountId}:table/${self:custom.tableName}'
   environment:
     SIGNUPS_TABLE: ${self:custom.tableName}
+  httpApi:
+    cors: true
 
 functions:
   api:
