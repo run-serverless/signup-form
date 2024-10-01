@@ -1,6 +1,6 @@
 # Early Access Signup Form
 
-Collection early access signups using a simple form and Serverless backend.
+Collect early access signups using a simple form or API request and Serverless backend.
 
 Deploys infrastructure to handle signups including:
 
