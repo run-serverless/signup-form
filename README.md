@@ -1,6 +1,7 @@
 # Early Access Signup Form
 
-Collect early access signups using a simple form or API request and Serverless backend.
+Collect early access signups using a simple form or API request and Serverless backend deployed using the
+[Serverless Framework V4](https://www.serverless.com/).
 
 Deploys infrastructure to handle signups including:
 
@@ -13,9 +14,18 @@ Deploys infrastructure to handle signups including:
 
 - AWS account
 - AWS CLI installed and configured with credentials
-- A centralised Serverless Framework deployment bucket using the format `<aws-account-id>--serverless-deploys`
+- A free [Serverless Framework](https://www.serverless.com/) account (required since V4)
+- A centralised Serverless Framework deployment S3 bucket using the format `<aws-account-id>--serverless-deploys`
 
 Replace `<aws-account-id>` with your AWS account ID.
+
+## Installation
+
+Install the Serverless Framework and application dependencies.
+
+```
+npm install
+```
 
 ## Configuration
 
